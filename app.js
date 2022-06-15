@@ -5,4 +5,8 @@ const app = express();
 
 app.use(express.json());
 
+app.get('/coosto', (req, res) => {
+    res.send("This is a fake Coosto App");
+})
+
 app.listen(PORT, () => console.log(`Server is runing at port: ${PORT} 🚀`));
