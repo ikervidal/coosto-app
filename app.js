@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/coosto', (req, res) => {
+app.get('/', (req, res) => {
     res.send("This is a fake Coosto App");
 })
 
