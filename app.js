@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (req, res) => {
+    console.log(req);
     res.send("This is a fake Coosto App");
 })
 
